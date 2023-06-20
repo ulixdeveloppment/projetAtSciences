@@ -1,1 +1,1 @@
-<script src="javascript/navbar.js"></script>
+<script src="javascript/dynamize.js"></script>

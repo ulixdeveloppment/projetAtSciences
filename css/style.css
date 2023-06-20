@@ -1,9 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
 body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation content */
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #333333;
@@ -30,7 +40,7 @@ body {
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-  background-color: #04aa6d;
+  background-color: hsl(228, 77%, 67%);
   color: white;
 }
 
@@ -39,6 +49,226 @@ body {
   display: none;
 }
 
+/* Block description */
+
+.block {
+  margin: 2rem;
+  border: 2px solid #000;
+  padding: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.disclaim {
+  margin: 2% 0;
+  font-size: 0.8em;
+  color: gray;
+}
+
+/* dropdown */
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+}
+
+*:focus {
+  outline: none;
+}
+
+.detailsblock {
+  margin: 2rem 0;
+  padding: 0 2%;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  width: 100%;
+}
+
+.panelcontent {
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+  padding: 1.5em;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.panelcontent > * + * {
+  margin-top: 1.5em;
+}
+
+details + details {
+  margin-top: 0.5rem;
+}
+
+summary {
+  list-style: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary {
+  border: 2px solid #000;
+  padding: 0.75em 1em;
+  cursor: pointer;
+  position: relative;
+  padding-left: calc(1.75rem + 0.75rem + 0.75rem);
+}
+
+summary:before {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0.75rem;
+  content: "↓";
+  width: 1.75rem;
+  height: 1.75rem;
+  background-color: #000;
+  color: #fff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+details[open] summary {
+  background-color: #eee;
+}
+
+details[open] summary:before {
+  content: "↑";
+}
+
+summary:hover {
+  background-color: #eee;
+}
+
+.test a {
+  color: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 1px 0 0;
+}
+
+.test a:hover {
+  box-shadow: 0 3px 0 0;
+}
+
+code {
+  font-family: monospace;
+  font-weight: 600;
+}
+
+.filial {
+  padding: 1px 4px;
+  margin: 0 2px;
+  border-radius: 0.3em;
+  background-color: hsl(228, 77%, 67%);
+  color: #fff;
+}
+.topic {
+  padding: 2px 4px;
+  margin: 2px 2px;
+  border-radius: 0.3em;
+  background-color: brown;
+  color: white;
+}
+.container {
+  margin: 2rem;
+  padding: 1.5rem 0;
+  line-height: 1.8em;
+}
+.item {
+  display: flex;
+  margin: 2% 0;
+  flex-wrap: wrap;
+}
+.column-item {
+  flex: 1;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  margin: 0 2%;
+}
+.title-item {
+  justify-content: flex-start;
+}
+.border {
+  width: 30px;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.downloadContentCard {
+  display: flex;
+  background-color: #eeeeee;
+  padding: 2% 3%;
+  border: 2px solid #000;
+  width: 100%;
+}
+.downloadContentCard > p {
+  margin: 0 10px;
+}
+
+.tree-section {
+  text-decoration: underline;
+  color: darkslateblue;
+}
+.board{
+  display: flex;
+  flex-wrap: wrap;
+}
+.maj{
+  flex: 2 1 0;
+}
+.info{
+  flex: 1 1 0;
+}
+.board-column{
+  margin: 0 2%;
+  min-width: 300px; /* Largeur minimale des colonnes */
+  box-sizing: border-box;
+}
+.tablecase{
+  border-radius: 0.3em;
+  padding: 4% 5%;
+  color: #fff;
+}
+.tablecase h3{
+  margin: 1% 0;
+}
+.salmon{
+  background-color: indianred;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.blue{
+  background-color: cornflowerblue;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+  color: black;
+}
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {
